@@ -13,29 +13,36 @@
     color: rgb(30, 0, 131)
 }
 
+.menu_ul {
+    background-color: rgb(43, 174, 226);
+    width: 100%;
+    height: 40px;
+}
+
 .menu_button_list {
     text-align: left;
     list-style-type: none;
     display: inline;
-    margin-top: 50px;
     margin: 10px;
-    padding: 10px;
+    padding: 9px;
     margin-left: -15px;
     z-index: 2;
-    background-color: rgb(215, 236, 255);
     border: 2px red;
 }
 
 .menu_button {
     font-style: 'IBM Plex Mono', monospace;
     font-size: 20px;
-    font-weight: 500;
     text-decoration: none;
-    color: rgb(0, 170, 255);
+    color: black;
 }
 
 .menu_button:hover {
-    color: rgb(255, 0, 128);
+    color: white;
+    margin-top: 20px;
+    border: 15px rgb(255, 0, 93) solid;
+    background-color: rgb(255, 0, 93);
+    border-radius: 5px;
 }
 
 .pre_image {
@@ -43,7 +50,8 @@
     width: 300px;
     display: block;
     margin-top: -20px;
-    margin-left: 50%;
+    margin-left: 40%;
+    border: 10px;
     border-color: aqua;
     z-index: -1;
 }
