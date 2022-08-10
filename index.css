@@ -1,0 +1,196 @@
+#navbar {
+    overflow: hidden;
+    background-color: #c4f8ff;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    height: 11%;
+    z-index: 1;
+}
+
+#navbar a {
+    float: right;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+#navbar a button {
+    background-color: #000000;
+    color: white;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 8px 10px 8px 10px;
+}
+
+#navbar a button:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+#navbar a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.logo {
+    position: absolute;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+#navbar .lgin-btn {
+    font-family: 'IBM Plex Mono';
+    padding-top: 25px;
+    padding-left: 50px;
+    font-weight: 1000;
+}
+
+#navbar .lgin-btn:hover {
+    color: rgb(0, 170, 255);
+}
+
+#second-navbar {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 72px;
+    background-color: #000000;
+}
+
+.nav-item {
+    float: left;
+    display: block;
+    color: #979797;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.first-i {
+    text-align: center;
+    margin-left: 32%;
+}
+
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.heading-1 {
+    margin-top: 70px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.paragraph-1 {
+    background-color: #FFE5FE;
+    width: 40%;
+    text-align: center;
+    margin-left: 15%;
+    margin-top: 5%;
+    padding: 10px 20px 10px 20px;
+}
+
+.h-2 {
+    margin-top: 20px;
+}
+
+.img-1 {
+    image-rendering: crisp-edges;
+    height: 300px;
+    width: 300px;
+    margin-top: -18%;
+    margin-left: 65%;
+}
+
+.p1c {
+    color: #B50098;
+}
+
+.paragraph-2 {
+    background-color: #E5FFF1;
+    width: 40%;
+    text-align: center;
+    float: right;
+    margin-right: 15%;
+    margin-top: 5%;
+    padding: 10px 20px 10px 20px;
+}
+
+.img-2 {
+    image-rendering: crisp-edges;
+    height: 300px;
+    width: 300px;
+    float: right;
+    margin-top: -18%;
+    margin-right: 65%;
+}
+
+.p2c {
+    color: #00CE3A;
+}
+
+.automation {
+    margin-top: 30%;
+    text-align: center;
+    background-color: #c4f8ff;
+}
+
+.img-3 {
+    width: 80%;
+    height: 30%;
+    border: 1px solid #c4f8ff;
+    border-radius: 10px;
+}
+
+.box {
+    height: 450px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+.box1 {
+    margin-left: 15%;
+    margin-top: 2%;
+    background-color: #E9C6FF;
+}
+
+.box2 {
+    margin-left: 40%;
+    margin-top: -33%;
+    background-color: #FFC1B4;
+}
+
+.box3 {
+    margin-left: 65%;
+    margin-top: -29%;
+    background-color: #FFB4B4;
+}
+
+.img-box {
+    margin-left: 30px;
+    margin-top: 30px;
+    height: 240px;
+    width: 240px;
+    border-radius: 10px;
+}
