@@ -1,0 +1,147 @@
+@media (max-width:750px) {
+    .subscribe {
+        font-size: 10px;
+    }
+
+    .navbar {
+        margin-top: 0px;
+        width: 100%;
+
+    }
+
+    .nav-logo {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        font-size: 12px;
+        display: none;
+        padding: 10px;
+        background-color: #001768;
+        color: #ffffff;
+        top: 130px;
+    }
+
+    .navbar ul li {
+        display: block;
+        padding: 0;
+        margin: 10px;
+    }
+
+    #product {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .navbar ul li::after {
+        content: ' ';
+        width: 0%;
+        height: 2px;
+        background-color: #E5FFF1;
+        display: block;
+        transition: 0.5s;
+        margin: auto;
+        cursor: pointer;
+    }
+
+    .navbar ul li:hover::after {
+        width: 100%;
+    }
+
+    .account {
+        z-index: 4;
+        display: none;
+    }
+
+    #empty-li {
+        display: block;
+    }
+
+    #menu-btn {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .img-1 {
+        width: 43%;
+        margin-left: 29%;
+        margin-top: 3%;
+
+    }
+
+    .paragraph-1 {
+        width: 70%;
+        margin-top: 5%;
+    }
+
+    .img-2 {
+        width: 50%;
+        margin-right: 26%;
+    }
+
+    .paragraph-2 {
+        width: 70%;
+        margin-top: 5%;
+    }
+
+    .automation {
+        width: 100%;
+        margin-top: 110%;
+    }
+
+    .box {
+        height: 30%;
+        width: 70%;
+        border-radius: 15px;
+    }
+
+    .box1 {
+        margin-left: 15%;
+        margin-top: 10%;
+        font-weight: 100;
+        font-size: 20px;
+
+    }
+
+    .box2 {
+        margin-left: 15%;
+        margin-top: 20%;
+        font-weight: 100;
+        font-size: 20px;
+
+    }
+
+    .box3 {
+        margin-left: 15%;
+        margin-top: 20%;
+        font-weight: 100;
+        font-size: 19px;
+
+    }
+
+    .img-box {
+        margin-left: 15%;
+        margin-top: -10%;
+        height: 240px;
+        width: 240px;
+        border-radius: 10px;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+    .automation {
+        margin-top: 145%;
+    }
+}
+
+@media (max-width: 300px) {
+    .automation {
+        margin-top: 225%;
+    }
+}
