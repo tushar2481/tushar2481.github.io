@@ -12,12 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;1,500&display=swap"
         rel="stylesheet">
+    <script src="/index.js"></script>
     <title>Home - Trus7s3c_</title>
 </head>
 
 <body>
     <div class="subscribe">
-        <p class="sub-p">To get latest news, Subscribe to Our Newsletter to stay up-to-date
+        <p class="sub-p">To get latest news, Subscribe to Our Newsletter for staying up-to-date
             <button class="sub-btn">Subscribe</button>
         </p>
     </div>
@@ -67,8 +68,7 @@
                 <path fill-rule="evenodd"
                     d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
             </svg> &nbsp My Account
-            <li id="lgin">Login</li>
-            <li id="snin">Signin</li>
+            <li id="lgin"><a href="/login.php" style="text-decoration: none;">Login</a></li>
         </button>
     </nav>
     <br><br><br><br><br><br><br>
@@ -81,29 +81,13 @@
 
 
     <!-- bootstrap links  -->
+    <script>mobile()</script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
         integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
         integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
         crossorigin="anonymous"></script>
-    <script>
-        let x = screen.width;
-        function mid_nav(x) {
-            document.getElementById('products').style.marginRight = (x * 3 / 100) + "px";
-        }
-        mid_nav(x);
-        function openSignup() {
-            document.getElementById('lgin').style.display = "block";
-            document.getElementById('snin').style.display = "block";
-            document.getElementById('lgin').style.zIndex = 5;
-            document.getElementById('snin').style.zIndex = 5;
-        }
-        function closeSignup() {
-            document.getElementById('lgin').style.display = "none";
-            document.getElementById('snin').style.display = "none";
-        }
-    </script>
 </body>
 
 </html>
