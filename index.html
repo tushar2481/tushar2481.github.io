@@ -26,21 +26,18 @@
         <h1 class="nav-logo">Trus7s3c_</h1>
 
 
-        <button id="menu-btn" onclick="menuopen()" ondblclick="menuclose()"><svg xmlns="http://www.w3.org/2000/svg"
-                width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <button id="menu-btn" onclick="menuopen()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                     d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
             </svg></button>
         <ul id="menu">
-
             <li id="products">Products </li>
             <li id="academy">Academy </li>
             <li id="business">Business </li>
             <li id="blogs">Blogs </li>
             <li id="aboutus">Abouts Us </li>
             <li id="empty-li">Login</li>
-
-
         </ul>
         <button class="account" onmouseover="openSignup()" onmouseout="closeSignup()" id="abcd"><svg
                 xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -84,30 +81,27 @@
         <br>
         <div class="automation">
             <br><br>
-            <h4>Automation is a power today</h4><br>
+            <h4 class="h2">Automation is a power today</h4><br>
             <img class="img-3" src="/img/automate.webp" alt="Education"><br><br><br>
         </div>
         <div class="tool">
             <br><br>
-            <h3 style="text-align: center;">What Our tools offers you?</h3>
+            <h3 class="h1">What Our tools offers you?</h3>
         </div>
         <div class="box box1">
             <img src="/img/bcd.webp" alt="idea" class="img-box">
             <br><br>
             <p style="text-align: center;"><strong style="font-weight: 600;">Availabe Anywhere</strong> <br><br>Our
-                Tools can be Access from Both
-                Desktop as well
-                as
-                Mobile Devices, That will encourage Mobility and Mobile Hackers to run them from anywhere. Now, No need
+                Tools can be Access from Both Desktop as well as Mobile Devices, That will encourage Mobility and Mobile
+                Hackers to run them from anywhere. Now, No need
                 to Take your Computer Everywhere.</p>
         </div>
         <div class="box box2">
             <img src="/img/abc.webp" alt="idea" class="img-box">
             <br><br>
             <p style="text-align: center;"><strong style="font-weight:600;">Fast & Intelligenent</strong><br><br> We
-                have
-                Deployed our tool in safe cloud environment, so
-                that they can give you seamless Performance. In Terms of Intelligence, No need to Give whole long
+                have Deployed our tool in safe cloud environment, so that they can give you seamless Performance. In
+                Terms of Intelligence, No need to Give whole long
                 commands. Just Give Some Information Related to Target and you are good to go.</p>
         </div>
         <div class="box box3">
@@ -118,8 +112,45 @@
                 Tools Hosted in Cloud, We have used Powerful
                 OS, Extreame RAM & Disc Space. We aim to have almost 0 physical resources from you for running tools. 10
                 GBps Internet from our side Give you immense Experiance. Go Fast.</p>
-        </div><br> <br> <br>
+        </div><br><br><br>
+        <div class="marq">
+            <h3 class="h2">Which Tools we have deployed in Cloud?</h3>
+            <marquee behavior="scroll" direction="left" scrollamount="5" class="img">
+
+                <img src="/img/unnamed (2).png" alt="Education" class="t-i-1">
+                <img src="/img/nmap.png" alt="Education" class="t-i-1">
+                <img src="/img/unnamed.png" alt="Education" class="t-i-1">
+                <img src="/img/34567.png" alt="Education" class="t-i-1" id="ti3">
+            </marquee>
+        </div>
+        <div class="blog">
+            <h3 class="h1">Blogs</h3>
+
+            <div class="b1">
+                <img src="/img/Cyber-Crime-SQ1.jpg" alt="Education" class="b-i-1">
+                <p id="b-p">Cyber Crime Rate Growth in 2022</p>
+                <p id="b-p-1">Cyber security is grown by 114% <br>comparitive to last economical <br> year 2021.</p><br>
+                <button id="readmore">Read More</button>
+            </div>
+            <div class="b2">
+                <img src="/img/Top-10-Cybersecurity-Tools-That-You-Should-Know.jpg" alt="Education" class="b-i-2">
+                <p id="b-p">Latest Powerful Tools Introduced</p>
+                <p id="b-p-1">Go Language is becoming a more<br> popular among cyber tool<br> developers.</p><br>
+                <button id="readmore">Read More</button>
+            </div>
+            <div class="b3">
+                <img src="/img/why-Its-fine-to-fail.jpg" alt="Education" class="b-i-3">
+                <p id="b-p1">How to Fall ahead in Cyber Security Career</p>
+                <p id="b-p-1">Fail means “First Attempt in Latest<br> Way”. Go Beyond fear and get <br>succeed.</p>
+                <button id="readmore">Read More</button>
+
+            </div>
+            <br><br><br>
+        </div>
+        <br><br><br>
     </div>
+
+
 
 
 
@@ -149,10 +180,12 @@
         }
 
         function menuopen() {
-            document.getElementById("menu").style.display = "block";
-        }
-        function menuclose() {
-            document.getElementById("menu").style.display = "none";
+            var x = document.getElementById("menu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
         }
 
 
