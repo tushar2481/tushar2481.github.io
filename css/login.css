@@ -144,7 +144,7 @@
 
     .form {
         width: 82%;
-        height: 60%;
+        height: auto;
         margin-left: 9%;
         margin-right: 9%;
         margin-top: 15%;
