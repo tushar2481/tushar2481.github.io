@@ -18,7 +18,7 @@ function mode_change(value) {
         document.getElementById('ip2').style.color = 'white';
         document.getElementById('ip3').style.color = 'white';
         document.getElementById('ip4').style.color = 'white';
-        document.getElementById("logo-img").src = "/img/dark/2.png";
+        document.getElementById("logo-img").src = "/img/Dark/2.png";
 
         document.getElementById('chkbx').value = 2;
     }
