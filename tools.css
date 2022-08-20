@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+}
+
+.nav {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+#profile-pic {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    float: right;
+    margin: 15px;
+    border: 3px solid rgb(0, 0, 0);
+}
+
+#profile-pic:hover {
+    border: 3px solid rgb(0, 81, 255);
+}
+
+#recon-title {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.divider {
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(0, 5, 70);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.dropdown {
+    text-align: center;
+    margin-left: -5px;
+}
+
+.form {
+    text-align: center;
+    position: relative;
+}
+
+.ip {
+    width: 200px;
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(0, 5, 70);
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#submit-btn {
+    text-align: center;
+    display: block;
+}
+
+.tool {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    padding: 12px;
+    background-color: rgb(0, 0, 61);
+    color: #ffffff;
+    width: 75%;
+    margin: 10px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+#submit {
+    height: 30px;
+    width: 170px;
+    background-color: rgb(0, 0, 61);
+    color: white;
+}
