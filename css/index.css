@@ -1,0 +1,329 @@
+#navbar-id {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#navbar-id {
+    background-color: #4B06A1;
+    color: #ffffff;
+}
+
+#navbarNav a {
+    color: #ffffff;
+    font-family: 'IBM Plex Mono';
+    font-size: 15px;
+}
+
+#logo-name {
+    color: #ffffff;
+    font-weight: 300;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Beth Ellen', sans-serif;
+}
+
+#logo-img {
+    vertical-align: middle;
+}
+
+.abc::after {
+    content: " ";
+    color: #8747fd;
+    transition: 0.5s;
+    height: 2px;
+    display: block;
+    margin: auto;
+    width: 0%;
+    background: #8747fd;
+}
+
+.abc:hover::after {
+    width: 30%;
+
+}
+
+#list li {
+    text-align: center;
+}
+
+#user:hover::after {
+    width: 0%;
+}
+
+#user-img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.main {
+    margin-top: 19%;
+}
+
+#heading-1 {
+    padding-top: 5%;
+    text-align: center;
+    font-family: 'Cinzel Decorative', sans-serif;
+    color: #ffffff;
+    font-weight: 800;
+    padding-bottom: 5%;
+}
+
+#drp-button {
+
+    background-color: #7c28eb;
+    color: white;
+    font-family: 'Cinzel Decorative', sans-serif;
+    width: 210px;
+    height: 30px;
+    font-weight: 600;
+}
+
+#drp-id {
+    text-align: center;
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#tag {
+    width: 40%;
+    text-align: center;
+    margin-left: 21%;
+
+}
+
+#tag input {
+    display: none;
+    text-align: center;
+    width: 210px;
+    background-color: #d5b6ff;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    border: 2px solid #7c28eb;
+    border-radius: 5px;
+    height: 30px;
+    margin: 10%;
+    margin-left: 25%;
+    padding: 3% 8%;
+}
+
+
+/* footer */
+.footer {
+    margin-top: 100px;
+    width: 100%;
+    background-color: #1A1919;
+    color: #ffffff;
+
+}
+
+#footer-logo {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+#footer-logo a {
+    font-family: 'Beth Ellen', sans-serif;
+    padding-left: 10px;
+}
+
+#newsletter-para {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    margin-top: 5%;
+    margin-left: 24%;
+}
+
+#input-text {
+    border: none;
+    margin-left: 26%;
+    width: 40%;
+    margin-bottom: 8%;
+}
+
+#sub-btn {
+    border: none;
+    margin-left: -3px;
+}
+
+#icon-link {
+    display: flex;
+    padding: 10px;
+}
+
+#icon-link li {
+    list-style: none;
+    padding: 10px;
+}
+
+#policies-list {
+    width: 100%;
+    display: flex;
+    font-size: 10px;
+}
+
+#list-footer-policies {
+    width: 70%;
+    display: flex;
+}
+
+#list-footer-policies {
+    display: flex;
+    padding-left: 3%;
+}
+
+#list-footer-policies li {
+    list-style: none;
+    padding: 5px;
+}
+
+#list-footer-policies a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#p-footer-polices {
+    width: 30%;
+    padding-left: 2%;
+    float: right;
+}
+
+
+#tool-list,
+#academy-list,
+#other-list,
+#social-list {
+    display: none;
+}
+
+#academy-list,
+#other-list,
+#social-list li {
+    text-align: left;
+    width: 80%;
+    margin-left: 20px;
+}
+
+#tool-list,
+#academy-list,
+#other-list,
+#social-list ul {
+    list-style: circle;
+}
+
+
+#social-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+#other-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+#academy-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+#tool-list a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+}
+
+#social {
+    display: none;
+}
+
+#footer-h {
+    text-align: center;
+}
+
+@media only screen and (min-width:500px) {
+
+
+    .abc {
+        padding-left: 50px;
+    }
+
+    #navbarNav {
+        margin-top: 15px;
+    }
+
+    .abc:hover::after {
+        width: 15%;
+    }
+
+    .main {
+        margin-top: 17%;
+    }
+
+    #tag input {
+        margin-left: 16%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .abc {
+        padding-left: 30px;
+    }
+
+    #navbarNav {
+        margin-left: 18%;
+    }
+
+    .abc:hover::after {
+        width: 100%;
+    }
+
+    #user {
+        margin-left: 32%;
+    }
+
+    .main {
+        margin-top: 7%;
+    }
+
+    #tag input {
+        margin-left: 50%;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    #course {
+        padding-left: 20%;
+    }
+
+    #user {
+        margin-left: 52%;
+    }
+
+    .main {
+        margin-top: 5%;
+    }
+
+    #tag input {
+        margin: 5%;
+        margin-left: 38%;
+        font-size: 15px;
+        width: 400px;
+    }
+
+    #drp-button {
+        width: 400px;
+        font-size: 15px;
+    }
+}
