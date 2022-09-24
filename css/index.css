@@ -313,14 +313,10 @@ span {
 
 
 #social-list li {
-    margin-left: 70px;
+    position: relative;
+    left: 5%;
     text-align: center;
     list-style: none;
-    padding: 5px;
-}
-
-#social hr {
-    display: none;
 }
 
 #footer-h {
@@ -448,7 +444,6 @@ span {
     #social {
         width: 50%;
         margin-top: 10%;
-        margin-left: 100px;
 
     }
 
