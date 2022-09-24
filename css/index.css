@@ -187,6 +187,7 @@ span {
 #footer-logo {
     position: relative;
     top: 10px;
+    left: 10px;
     color: #ffffff;
     font-weight: 300;
     font-size: 18px;
