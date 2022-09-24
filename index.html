@@ -219,23 +219,30 @@
     </div>
 
     <script>
+        let width = screen.width;
         function expandTool() {
+            if (width <= 1000){
             document.getElementById("tool-list").style.display = "block";
             document.getElementById("academy-list").style.display = "none";
             document.getElementById("other-list").style.display = "none";
             document.getElementById("tool-list").addEventListener("click", closeList);
+            }  
         }
         function expandAcademy() {
+            if (width <= 1000){
             document.getElementById("tool-list").style.display = "none";
             document.getElementById("academy-list").style.display = "block";
             document.getElementById("other-list").style.display = "none";
             document.getElementById("academy-list").addEventListener("click", closeList);
+            }
         }
         function expandOthers() {
+            if (width <= 1000){
             document.getElementById("tool-list").style.display = "none";
             document.getElementById("academy-list").style.display = "none";
             document.getElementById("other-list").style.display = "block";
             document.getElementById("other-list").addEventListener("click", closeList);
+            }
         }
         function closeList() {
             document.getElementById("tool-list").style.display = "none";
