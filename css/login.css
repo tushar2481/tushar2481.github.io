@@ -90,11 +90,13 @@ button:hover {
 }
 
 .login input {
-    margin: 12px auto;
+    margin: 20px auto;
+    margin-bottom: 0px;
 }
 
 .login button {
     margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 #chk:checked~.login {
