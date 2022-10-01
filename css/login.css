@@ -90,12 +90,11 @@ button:hover {
 }
 
 .login input {
-    margin: 15px auto;
-    margin-bottom: 0px;
+    margin: 10px auto 0px auto;
 }
 
 .login button {
-    margin-top: 5px;
+    margin-top: 8px;
     margin-bottom: 0px;
 }
 
