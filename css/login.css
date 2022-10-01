@@ -87,6 +87,7 @@ button:hover {
 .login label {
     color: #573b8a;
     transform: scale(.6);
+    margin-bottom: 50px;
 }
 
 .login input {
