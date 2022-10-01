@@ -95,7 +95,7 @@ button:hover {
 
 .login button {
     margin-top: 8px;
-    margin-bottom: 0px;
+    margin-bottom: 2px;
 }
 
 #chk:checked~.login {
