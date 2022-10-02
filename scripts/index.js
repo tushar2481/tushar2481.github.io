@@ -6,7 +6,7 @@ function nmap() {
     document.getElementById('ip4').style.display = 'block';
     document.getElementById('ip1').placeholder = "Enter IP Address";
     document.getElementById('ip2').placeholder = "Enable Stealth Scan? (Y/n)";
-    document.getElementById('ip3').placeholder = "EEnable Script Scan? (Y/n)";
+    document.getElementById('ip3').placeholder = "Enable Script Scan? (Y/n)";
     document.getElementById('ip4').placeholder = "Output File Name";
 }
 
