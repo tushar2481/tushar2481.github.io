@@ -1,5 +1,4 @@
 function nmap() {
-    alert('[+] Your Selected Tool : Nmap');
     document.getElementById('ip1').style.display = 'block';
     document.getElementById('ip2').style.display = 'block';
     document.getElementById('ip3').style.display = 'block';
@@ -11,7 +10,6 @@ function nmap() {
 }
 
 function assetfinder() {
-    alert('[+] Your Selected Tool : Assetfinder');
     document.getElementById('ip1').style.display = 'block';
     document.getElementById('ip2').style.display = 'none';
     document.getElementById('ip3').style.display = 'none';
@@ -21,7 +19,6 @@ function assetfinder() {
 }
 
 function dnsenum() {
-    alert('[+] Your Selected Tool : DNSenum');
     document.getElementById('ip1').style.display = 'block';
     document.getElementById('ip2').style.display = 'block';
     document.getElementById('ip3').style.display = 'block';
