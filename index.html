@@ -93,14 +93,13 @@
             <div id="form-center">
                 <form action="/api/run/tool.php" id="tag" style="text-align: center;" method="post"
                     style="display: none;">
-                    <input type="hidden" name="toolname" value="">
-                    <input type="text" placeholder="Enter IP Address" name="ip" id="ip1">
-                    <input type="text" placeholder="Enable Stealth Scan? (Y/n)" name="sS" id="ip2">
-                    <input type="text" placeholder="Enable Script Scan? (Y/n)" name="script" id="ip3">
-                    <input type="text" placeholder="Output File Name" name="o" id="ip4">
-
-                    <input type="submit" value="Run Tool!"
-                        style="text-align: center; display: block; position: relative; color: white; background-color: #7c28eb;  height: 30px; font-family: 'Cinzel Decorative', sans-serif; font-weight: 600; padding: 3px;">
+                    <input type="hidden" name="tool_name" value="nmap">
+                    <input type="text" placeholder="Enter IP Address" name="ip1" id="ip1">
+                    <input type="text" placeholder="Number of Threads (1-5)" name="ip2" id="ip2">
+                    <input type="text" placeholder="Verbose Mode (yes/no)" name="ip3" id="ip3">
+                    <br>
+                    <input type="submit" id="sub-btn" value="Run Tool!"
+                        style="text-align: center; display: none; position: relative; color: white; background-color: #7c28eb;  height: 30px; font-family: 'Cinzel Decorative', sans-serif; font-weight: 600; padding: 3px;">
                 </form>
             </div>
         </div><br><br>
