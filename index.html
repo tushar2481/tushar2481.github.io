@@ -24,50 +24,8 @@
         integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tools | Trus7s3c_</title>
-    <script>
-        function nmap() {
-            nmap1();
-            document.getElementById('ip1').style.display = 'block';
-            document.getElementById('ip2').style.display = 'block';
-            document.getElementById('ip3').style.display = 'block';
-            document.getElementById('sub-btn').style.display = 'block';
-        }
-
-        function assetfinder() {
-            assetf1();
-            document.getElementById('ip1').style.display = 'block';
-            document.getElementById('ip2').style.display = 'none';
-            document.getElementById('ip3').style.display = 'none';
-            document.getElementById('sub-btn').style.display = 'block';
-        }
-
-        function dnsenum() {
-            dnse1();
-            document.getElementById('ip1').style.display = 'block';
-            document.getElementById('ip2').style.display = 'block';
-            document.getElementById('ip3').style.display = 'block';
-            document.getElementById('sub-btn').style.display = 'block';
-        }
-
-        function nmap1() {
-            document.getElementById('tool_name').setAttribute('value', 'nmap');
-            document.getElementById('ip1').placeholder = "Enter IP Address";
-            document.getElementById('ip2').placeholder = "Number of threads (1-5)";
-            document.getElementById('ip3').placeholder = "Verbose Mode (yes/no)";
-        }
-
-        function assetf1() {
-            document.getElementById('ip1').placeholder = "Enter Domain Name";
-            document.getElementById('tool_name').setAttribute('value', 'assetfinder');
-        }
-
-        function dnse1() {
-            document.getElementById('tool_name').setAttribute('value', 'dnsenum');
-            document.getElementById('ip1').placeholder = "Enter Domain Name";
-            document.getElementById('ip2').placeholder = "Enable Zone Transfer? (Y/n)";
-            document.getElementById('ip3').placeholder = "Enable Verbose Mode? (Y/n)";
-        }
-    </script>
+    <script src="script/tools.js"></script>
+    <script src="script/index.js"></script>
 </head>
 
 <body style="background-color: #290658;">
@@ -124,25 +82,26 @@
                 Select Tool to Run
             </button>
             <ul class="dropdown-menu" id="drop-menu">
-                <li onclick="nmap()"><a class="dropdown-item list-hover" href="#"
+                <li onclick="nmap()" onclick="nmap1()"><a class="dropdown-item list-hover" href="#"
                         style="width: 210px; text-align:center;">Nmap</a>
                 </li>
-                <li onclick="assetfinder()"><a class="dropdown-item list-hover" href="#"
+                <li onclick="assetfinder()" onclick="assetf1()"><a class="dropdown-item list-hover" href="#"
                         style="width: 210px; text-align:center;">Assetfinder</a></li>
-                <li onclick="dnsenum()"><a class="dropdown-item list-hover" href="#"
+                <li onclick="dnsenum()" onclick="dnse1()"><a class="dropdown-item list-hover" href="#"
                         style="width: 210px; text-align:center;">DNSenum</a>
                 </li>
             </ul>
             <div id="form-center">
                 <form action="http://4.224.52.184/tool.php" id="tag" style="text-align: center;" method="post"
                     style="display: none;">
-                    <input type="hidden" name="tool_name" value="nmap">
-                    <input type="text" placeholder="Enter IP Address" name="ip1" id="ip1">
-                    <input type="text" placeholder="Number of Threads (1-5)" name="ip2" id="ip2">
-                    <input type="text" placeholder="Verbose Mode (yes/no)" name="ip3" id="ip3">
-                    <br>
-                    <input type="submit" id="sub-btn" value="Run Tool!"
-                        style="text-align: center; display: none; position: relative; color: white; background-color: #7c28eb;  height: 30px; font-family: 'Cinzel Decorative', sans-serif; font-weight: 600; padding: 3px;">
+                    <input type="hidden" name="toolname" value="">
+                    <input type="text" placeholder="Enter IP Address" name="ip" id="ip1">
+                    <input type="text" placeholder="Enable Stealth Scan? (Y/n)" name="sS" id="ip2">
+                    <input type="text" placeholder="Enable Script Scan? (Y/n)" name="script" id="ip3">
+                    <input type="text" placeholder="Output File Name" name="o" id="ip4">
+
+                    <input type="submit" value="Run Tool!"
+                        style="text-align: center; display: block; position: relative; color: white; background-color: #7c28eb;  height: 30px; font-family: 'Cinzel Decorative', sans-serif; font-weight: 600; padding: 3px;">
                 </form>
             </div>
         </div><br><br>
@@ -263,34 +222,34 @@
     <script>
         let width = screen.width;
         function expandTool() {
-            if (width <= 1000){
-            document.getElementById("tool-list").style.display = "block";
-            document.getElementById("academy-list").style.display = "none";
-            document.getElementById("other-list").style.display = "none";
-            document.getElementById("tool-list").addEventListener("click", closeList);
-            }  
+            if (width <= 1000) {
+                document.getElementById("tool-list").style.display = "block";
+                document.getElementById("academy-list").style.display = "none";
+                document.getElementById("other-list").style.display = "none";
+                document.getElementById("tool-list").addEventListener("click", closeList);
+            }
         }
         function expandAcademy() {
-            if (width <= 1000){
-            document.getElementById("tool-list").style.display = "none";
-            document.getElementById("academy-list").style.display = "block";
-            document.getElementById("other-list").style.display = "none";
-            document.getElementById("academy-list").addEventListener("click", closeList);
+            if (width <= 1000) {
+                document.getElementById("tool-list").style.display = "none";
+                document.getElementById("academy-list").style.display = "block";
+                document.getElementById("other-list").style.display = "none";
+                document.getElementById("academy-list").addEventListener("click", closeList);
             }
         }
         function expandOthers() {
-            if (width <= 1000){
-            document.getElementById("tool-list").style.display = "none";
-            document.getElementById("academy-list").style.display = "none";
-            document.getElementById("other-list").style.display = "block";
-            document.getElementById("other-list").addEventListener("click", closeList);
+            if (width <= 1000) {
+                document.getElementById("tool-list").style.display = "none";
+                document.getElementById("academy-list").style.display = "none";
+                document.getElementById("other-list").style.display = "block";
+                document.getElementById("other-list").addEventListener("click", closeList);
             }
         }
         function closeList() {
-            if (width <= 1000){
-            document.getElementById("tool-list").style.display = "none";
-            document.getElementById("academy-list").style.display = "none";
-            document.getElementById("other-list").style.display = "none";
+            if (width <= 1000) {
+                document.getElementById("tool-list").style.display = "none";
+                document.getElementById("academy-list").style.display = "none";
+                document.getElementById("other-list").style.display = "none";
             }
         }
     </script>
